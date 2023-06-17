@@ -1,0 +1,67 @@
+.Footer{
+    width: 100%;
+     /* height: fit-content; */
+     background-color: black;
+     color: white; 
+     padding-top: 1px;
+     padding-left: 0px;
+ }
+ .footer-container{
+     display: flex;
+    
+ }
+ .location{
+     display: flex;
+     align-items: center;
+ }
+ .phone{
+     display: flex;
+     align-items: center;
+ }
+ .email{
+     display: flex;
+     align-items: center;
+ }
+ .telegram{
+     display: flex;
+     align-items: center;
+ }
+ .whatsapp{
+     display: flex;
+     align-items: center;
+ }
+ .instagram{
+     display: flex;
+     align-items: center;
+ }
+ .location{
+     display: flex;
+     align-items: center;
+ }
+ .right{
+     margin-left: 30%;
+ }
+ .left{
+     margin-left: 5%;
+ }
+ 
+ @media screen and (max-width:750px){
+     .right{
+         margin-left: 10%;
+     }
+ }
+ @media screen and (max-width:450px){
+     .right{
+         margin-left: 0%;
+     }
+     .left{
+         margin-right: 0%;
+     }
+     .footer-container{
+         display: flex;
+          flex-direction: wrap;
+         font-size: small;
+     
+     }
+ }
+ 

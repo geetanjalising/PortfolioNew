@@ -1,0 +1,68 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url(anas-alshanti-feXpdV001o4-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    color: rgb(150, 246, 6);
+ 
+  }
+  
+  .about {
+    width: 70%;
+    height: fit-content;
+    background-color: rgb(8, 9, 9, 0.7);
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border: 2px solid black;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px #696060;
+    z-index: 1;
+    font-size: large;
+  }
+  
+  .head {
+    display: flex;
+    justify-content: center;
+  }
+  .skills {
+    margin-left: 45px;
+    margin-right: 50px;
+  }
+  .education {
+    margin-left: 45px;
+    margin-right: 50px;
+  }
+  .head h1 {
+    color: #bea9a9;
+    font-weight: 50;
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(73, 69, 69);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .about img {
+    width: 30%;
+  
+    margin-left: 35%;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #341862;
+  }
+  @media screen and (max-width: 1350px) {
+    .about {
+      margin-top: 10%;
+    }
+    .about img {
+      width: 50%;
+  
+      margin-left: 25%;
+      border-radius: 50%;
+      box-shadow: 4px 4px 4px #341862;
+    }
+  }
+  @media screen and (max-width:800px){
+    .about{
+        width: 80%;
+    }
+  }

@@ -10,6 +10,8 @@ import AnimatedCursor from "react-animated-cursor"
 
 
 function App() {
+  //Refs are useful when getting user input, DOM element properties and storing constantly updating values. However if you are storing component related info or use methods in components states are the best option.
+  //The main use of useRef hook is to access the DOM elements in a more efficient way as compared to simple refs.
   const section1 = useRef();
   const section2 = useRef();
   const section3 = useRef();
@@ -49,16 +51,15 @@ function App() {
 
   return (
     <>
-     <header>
-          <div className={showHamb?"mobileview":"nav"}>
+      <header>
+        <div className={showHamb ? "mobileview" : "nav"}>
           <ul>
             <li onClick={() => scrollHandler(section1)}>Start</li>
             <li onClick={() => scrollHandler(section2)}>About</li>
             <li onClick={() => scrollHandler(section3)}>Work</li>
             <li onClick={() => scrollHandler(section4)}>Contact</li>
           </ul>
-
-    </div>
+        </div>
       </header>
 
       <div ref={section1} className="sec1"><Home /></div>
@@ -69,22 +70,22 @@ function App() {
 
       <div ref={section4} className="sec4"><Contact /></div>
       <div style={{
-          position: "fixed",
-          right: 10,
-          bottom: 20,
-          color: "green",
-          marginRight: 15,
-          cursor: "pointer"
-        }}
+        position: "fixed",
+        right: 10,
+        bottom: 20,
+        color: "green",
+        marginRight: 15,
+        cursor: "pointer"
+      }}
         onClick={() => scrollToTop(toTop)}>
         {show && <h1><FaArrowAltCircleUp /></h1>}
       </div>
       <div className="Hamburger">
-          <a href="#" onClick={() => setHamb(!showHamb)}>
-            <GiHamburgerMenu />
-          </a>
-        </div>
-        <AnimatedCursor 
+        <a href="#" onClick={() => setHamb(!showHamb)}>
+          <GiHamburgerMenu />
+        </a>
+      </div>
+      <AnimatedCursor
         innerSize={8}
         outerSize={35}
         innerScale={1}
@@ -97,7 +98,7 @@ function App() {
         outerStyle={{
           border: "3px solid white"
         }}
-        />
+      />
     </>
   );
 }

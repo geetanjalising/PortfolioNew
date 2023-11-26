@@ -1,5 +1,9 @@
 import React from "react";
 import pic from "./me.jpeg";
+import gfg from "./gfg.png";
+import codechef from "./codechef.jpg";
+import hackerrank from "./hhackerrank.png";
+import leetcode from "./leetcode.png";
 
 import "./About.css";
 const About = () => {
@@ -87,16 +91,16 @@ const About = () => {
           </span>
           <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
             {" "}
-            '2022-now'{" "}
+            'Sept 2022-Apr 2023'{" "}
           </span>
           <span style={{ color: "white" }}> : </span>
           <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
             {" "}
-            'Problem-Setter Intern (Imotcha)'{" "}
+            'Problem-Setter Intern (Imocha)'{" "}
           </span>
           <span style={{ color: "white" }}>{"}"}</span>
           <br />
-       
+
           <span style={{ color: "white" }}>
             &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;{"{"}
           </span>
@@ -133,7 +137,7 @@ const About = () => {
           <div className="education">
             <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
               {" "}
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;'2020-now'{" "}
+              &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;'2020-2024'{" "}
             </span>
             <span style={{ color: "white" }}> : </span>
             <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
@@ -142,12 +146,21 @@ const About = () => {
             </span>
             <br />
             <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; '2017-2019'{" "}
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; '2018-2019'{" "}
             </span>
             <span style={{ color: "white" }}> : </span>
             <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
               {" "}
               'Academic Global School, Gorakhpur'{" "}
+            </span>
+            <br />
+            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; '2016-2017'{" "}
+            </span>
+            <span style={{ color: "white" }}> : </span>
+            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
+              {" "}
+              'Sanskriti Public School, Gorakhpur'{" "}
             </span>
             <br />
           </div>
@@ -173,33 +186,59 @@ const About = () => {
           </span>
           <br />
           <div className="education">
-          <span style={{ color: "white" }}>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
-          </span>
-          <a href="https://drive.google.com/file/d/1lyrZX-4znjNscohcjzarjYH8CQqpwSmA/view?usp=sharing" style={{textDecorationnone:"none",fontStyle:"none"}}>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" , textDecoration:"none"}}>
-              {" "}
-            'Future ready talent virtual internship (Microsoft, FutureSkills, AICTE)'{" "}
+            <span style={{ color: "white" }}>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
             </span>
+            <a href="https://drive.google.com/file/d/1XmnEUf1qUUS3ZJnrtqbJCvxbSrmBv-Kf/view?usp=sharing" style={{ textDecorationnone: "none", fontStyle: "none" }}>
+              <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", textDecoration: "none" }}>
+                {" "}
+                'Social Network Analysis (NPTEL)'{" "}
+              </span>
             </a>
             <span style={{ color: "white" }}>
-             {"}"}
-          </span>
+              {"}"}
+            </span>
+            <br />
+
+            <span style={{ color: "white" }}>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
+            </span>
+            <a href="https://drive.google.com/file/d/1lyrZX-4znjNscohcjzarjYH8CQqpwSmA/view?usp=sharing" style={{ textDecorationnone: "none", fontStyle: "none" }}>
+              <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", textDecoration: "none" }}>
+                {" "}
+                'Future ready talent virtual internship (Microsoft, FutureSkills, AICTE)'{" "}
+              </span>
+            </a>
+            <span style={{ color: "white" }}>
+              {"}"}
+            </span>
             <br />
             <span style={{ color: "white" }}>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
-          </span>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
+            </span>
             <a href="https://drive.google.com/file/d/1c57PEAFGIZgiJA8NqmHt6CSCakyr2IiQ/view?usp=sharing">
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", fontStyle:"none" }}>
-              {" "}
-              'Software Engineering Virtual Experience (Forage)'{" "}
-            </span>
+              <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", fontStyle: "none" }}>
+                {" "}
+                'Software Engineering Virtual Experience (Forage)'{" "}
+              </span>
             </a>
             <span style={{ color: "white" }}>
-             {"}"}
-          </span>
+              {"}"}
+            </span>
             <br />
-            
+            <span style={{ color: "white" }}>
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
+            </span>
+            <a href="https://drive.google.com/file/d/1k6bCyOJJT0gtukDA1mow7bYSlL444_ax/view?usp=sharing" style={{ textDecorationnone: "none", fontStyle: "none" }}>
+              <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", textDecoration: "none" }}>
+                {" "}
+                'Signal and Telecom Summer Training'{" "}
+              </span>
+            </a>
+            <span style={{ color: "white" }}>
+              {"}"}
+            </span>
+
             <br />
           </div>
 
@@ -222,55 +261,42 @@ const About = () => {
             <span style={{ color: "blue" }}>
               &nbsp; &nbsp; return<span style={{ color: "white" }}>{" ["}</span>
             </span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' HTML/CSS/JS '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' C++ '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' C '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' Data Structures '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' ReactJs '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' NodeJs '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' Angular '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' SQL'{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' Git '{" "}
-            </span>
-            <span style={{ color: "white" }}>{" ,"}</span>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" }}>
-              {" "}
-              ' Github '{" "}
-            </span>
+            <br />
+            <div className="skill">
+              <div className="skill1">
+                <h3>HTML</h3>
+                  <div className="bar"><span className="html"></span></div>
+               
+                <h3>CSS</h3>
+                  <div className="bar"><span className="css"></span></div>
+                
+                <h3>JavaScript</h3>
+                  <div className="bar"><span className="js"></span></div>
+                
+                <h3>C++</h3>
+                  <div className="bar"><span className="cpp"></span></div>
+                
+                <h3>Data Structures</h3>
+                  <div className="bar"><span className="datstr"></span></div>
+                
+              </div>
+              <div className="skill2">
+                <h3>ReactJs</h3>
+                  <div className="bar"><span className="react"></span></div>
+                
+                <h3>NodeJs</h3>
+                  <div className="bar"><span className="node"></span></div>
+                
+                <h3>ExpressJs</h3>
+                  <div className="bar"><span className="express"></span></div>
+                <h3>MongoDB</h3>
+                  <div className="bar"><span className="mongodb"></span></div>
+                
+                <h3>SQL</h3>
+                  <div className="bar"><span className="sql"></span></div>
+                
+              </div>
+            </div>
             <span style={{ color: "white" }}>&nbsp; {"]"}</span>
           </div>
           <br />
@@ -278,59 +304,34 @@ const About = () => {
             &nbsp; &nbsp; &nbsp; &nbsp; {"}"}
           </span>
           <br />
-          <br/>
+          <br />
           <span style={{ color: "yellow" }}>
-            &nbsp; &nbsp; &nbsp; &nbsp;codingWebsites
+            &nbsp; &nbsp; &nbsp; &nbsp;codingPlatforms
             <span style={{ color: "white" }}>{"() {"}</span>
           </span>
           <br />
+
           <span style={{ color: "blue" }}>
             &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; return
             <span style={{ color: "white" }}>{" ["}</span>
           </span>
-          <br />
-          <div className="education">
-          <span style={{ color: "white" }}>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
-          </span>
-          <a href="https://auth.geeksforgeeks.org/user/geetanjalisingh1815/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" style={{textDecorationnone:"none",fontStyle:"none"}}>
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px" , textDecoration:"none"}}>
-              {" "}
-            'GeeksForGeeks'{" "}
-            </span>
+          <br /><br />
+          <div className="code">
+            <a href="https://auth.geeksforgeeks.org/user/geetanjalisingh1815/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user" style={{ textDecorationnone: "none", fontStyle: "none" }}>
+              <img src={gfg} ></img>
             </a>
-            <span style={{ color: "white" }}>
-             {"}"}
-          </span>
-            <br />
-            <span style={{ color: "white" }}>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;   {"{"}
-          </span>
-            <a href="https://leetcode.com/geetanjalisingh1815/">
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", fontStyle:"none" }}>
-              {" "}
-              'Leetcode'{" "}
-            </span>
+            <a href="https://leetcode.com/Geetanjali_singh1815/">
+              <img src={leetcode} ></img>
             </a>
-            <span style={{ color: "white" }}>
-             {"}"}
-          </span>
-            <br />
-          </div>
-      
-            <span style={{ color: "white" }}>
-          &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;    {"{"}
-          </span>
+
             <a href="https://www.hackerrank.com/geetanjalisingh?hr_r=1">
-            <span style={{ color: "rgb(150, 246, 6)", fontSize: "15px", fontStyle:"none" }}>
-              {" "}
-              'Hackerrank'{" "}
-            </span>
+              <img src={hackerrank} ></img>
             </a>
-            <span style={{ color: "white" }}>
-             {"}"}
-          </span>
-            <br />
+            <a href="https://www.codechef.com/users/geetanjalising">
+              <img src={codechef} ></img>
+            </a>
+          </div>
+          <br />
           <span style={{ color: "white" }}>
             &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {"]"}
           </span>

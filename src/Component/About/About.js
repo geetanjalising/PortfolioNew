@@ -14,7 +14,8 @@ const About = () => {
           <div className="head">
             <h1>About/{">"}</h1>{" "}
           </div>
-          <img src={pic} alt="portrait" />
+          <div className="imge">          <img src={pic} alt="portrait" />
+</div>
           <br />
           <br />
           {/* <p style={{color:'red'}}>class Jan Baszczok {"{"}</p> */}

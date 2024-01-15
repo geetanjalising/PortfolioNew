@@ -74,7 +74,7 @@ function App() {
         right: 10,
         bottom: 20,
         color: "green",
-        marginRight: 15,
+        marginRight: 15, 
         cursor: "pointer"
       }}
         onClick={() => scrollToTop(toTop)}>

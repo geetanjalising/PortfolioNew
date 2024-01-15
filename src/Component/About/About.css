@@ -38,6 +38,31 @@
     display: flex;
     justify-content: center;
   }
+  .imge{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .head h1 {
+    color: #bea9a9;
+    font-weight: 50;
+    font-size: 40px;
+    text-shadow: 2px 2px rgb(73, 69, 69);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .about img {
+    width: 300px;
+    height: 300px;
+    box-shadow: 2px 2px 4px #341862;
+    
+    border-radius: 50%;
+   
+  }
+  @media screen and (max-width: 1350px) {
+    .about {
+      margin-top: 10%;
+    }
+  }
   .skills {
     margin-left: 45px;
   }
@@ -151,6 +176,7 @@
       width:0%;
     }
     100%{
+     
       width:70%
     }
    }
@@ -201,31 +227,7 @@
     margin-left: 45px;
     margin-right: 50px;
   }
-  .head h1 {
-    color: #bea9a9;
-    font-weight: 50;
-    font-size: 40px;
-    text-shadow: 2px 2px rgb(73, 69, 69);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .about img {
-    width: 300px;
-    height: 300px;
-    box-shadow: 2px 2px 4px #341862;
-    margin-left: 35%;
-    border-radius: 50%;
-   
-  }
-  @media screen and (max-width: 1350px) {
-    .about {
-      margin-top: 10%;
-    }
-    .about img {
-      margin-left: 20%;
-      border-radius: 50% ;
-      box-shadow: 2px 2px 4px #341862;
-    }
-  }
+
   .code{
     display: flex;
     flex-direction: row;

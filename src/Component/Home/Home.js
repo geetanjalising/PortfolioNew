@@ -16,7 +16,7 @@ const Home = () => {
           <span ><a style={{ color: "rgb(130, 223, 223)" , fontSize: "26px", cursor: "pointer",marginLeft:"12px"}} href="https://twitter.com/Geetanj21944077"><FaTwitter/></a> </span>
           </div>
          
-          <h1>Hi, my name is Geetanjali Singh</h1>
+          <p><h2>Hi, my name is Geetanjali Singh</h2></p>
           <div className="d">
             <div className="d1">i am </div>
             <div className="d2">

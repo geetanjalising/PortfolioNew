@@ -65,25 +65,15 @@ h1{
     box-shadow: 5px 5px 5px rgb(105, 97, 96);
    }
   
-   @media screen and (max-width: 600px){
-     h1{
-      font-size: 30px;
-     }
-     .form{
-      padding: 20px;
-     } 
-     form{
-      width: 100%;
-     }
-   }
+   
    @media screen and (max-width: 800px){
     h1{
      font-size: 30px;
     }
     .form{
-     padding: 70px;
+     padding: 40px;
     } 
     form{
-     width: 70%;
+     width: 100%;
     }
   }

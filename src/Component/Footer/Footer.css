@@ -8,7 +8,7 @@
  }
  .footer-container{
      display: flex;
-    
+     
  }
  .location{
      display: flex;
@@ -40,28 +40,24 @@
  }
  .right{
      margin-left: 30%;
- }
- .left{
+ } 
+ .left{  
      margin-left: 5%;
  }
- 
+
  @media screen and (max-width:750px){
-     .right{
-         margin-left: 10%;
-     }
- }
- @media screen and (max-width:450px){
-     .right{
-         margin-left: 0%;
-     }
-     .left{
-         margin-right: 0%;
-     }
+     
      .footer-container{
-         display: flex;
-          flex-direction: wrap;
-         font-size: small;
+         display: block;
      
      }
+     .right{
+        margin: 0px;
+        margin-left: 5px !important;
+    } 
+    .left{
+        margin: 0%;
+        margin-left: 5px !important;
+    }
  }
  

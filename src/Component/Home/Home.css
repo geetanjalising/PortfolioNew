@@ -1,24 +1,11 @@
 .body{ 
     background-image: url('homebg.jpg');
-/*     
-    overflow: hidden;  */
     width: 100%;
     height: 100vh;
-    /* position: absolute;
-    right: 0px;
-    left: 0px; */
-    /* background-color: rgb(38, 46, 46); */
- 
-    
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
-    /* z-index: -1; */
-    /* margin: 0%;
-    padding: 0%; */
-    
 }
 .icons{
     display: flex;
@@ -52,7 +39,7 @@
     font-size: large;
     color: rgb(255, 253, 253);
     /* z-index: 1; */
-    text-shadow: 2px 2px #141414;
+     text-shadow: 2px 2px #141414;
      margin-left: 20%;
   }
 
@@ -64,11 +51,9 @@
      box-shadow: 4px 4px 4px #696060;
 }
 @media screen and (max-width: 1350px) {
-    .intro{
-        font-size: large;
-        color: rgb(255, 253, 253);
-        /* z-index: 1; */
-    }
+  .intro{
+    margin-left: 10%;
+  }
     .body img{
         height: 500px;
         width: 500px;
@@ -77,17 +62,14 @@
         border-radius: 50%;
        
     }
+
     
 }
-@media screen and (max-width: 1040px) {
+@media screen and (max-width: 700px) {
     .intro{
-        font-size: large;
-        color: rgb(255, 253, 253);
-        /* z-index: 1; */
-    }
-    /* .body{
-       flex-direction: column-reverse;
-    } */
+        margin-left: 1%;
+      }
+  
     .body img{
         height: 400px;
         width: 400px;

@@ -12,9 +12,17 @@ import {
   FaHtml5,
   FaCss3Alt,
   FaReact,
-  FaNodeJs
+  FaNodeJs,
+  FaExternalLinkAlt,
+  FaCode,
 } from "react-icons/fa";
-import { SiJavascript,SiExpress,SiMongodb,SiPostman,SiRedux } from "react-icons/si";
+import {
+  SiJavascript,
+  SiExpress,
+  SiMongodb,
+  SiPostman,
+  SiRedux,
+} from "react-icons/si";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -118,16 +126,22 @@ const Project = () => {
               <div className="info">
                 <h1>It SuitsUhh </h1>
                 <hr></hr>
-                <button>
-                  <a href="https://64ce344cf1f1823342e8aa46--whimsical-wisp-331d33.netlify.app/">
-                    Preview
-                  </a>
-                </button>
-                 <button>
-                  <a href="https://64ce344cf1f1823342e8aa46--whimsical-wisp-331d33.netlify.app/">
-                    Code
-                  </a>
-                </button>
+
+                <a
+                  href="https://64ce344cf1f1823342e8aa46--whimsical-wisp-331d33.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+
+                <a
+                  href="https://github.com/geetanjalising/IT_SUITS_UHH_Full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaCode />
+                </a>
               </div>
             </div>
             <div className="tilt-effect description" data-aos="zoom-in-left">
@@ -186,7 +200,7 @@ const Project = () => {
 
                   <span className="items">
                     <span style={{ color: "cyan", marginRight: "5px" }}>
-                      <SiMongodb/>
+                      <SiMongodb />
                     </span>
                     MongoDB
                   </span>
@@ -220,11 +234,20 @@ const Project = () => {
               <div className="info">
                 <h1>PuzzleGame</h1>
                 <hr></hr>
-                <button>
-                  <a href="https://64ef94ab6e94e86db746ec29--timely-marigold-234ac2.netlify.app/">
-                    Preview
-                  </a>
-                </button>
+                <a
+                  href="https://64ef94ab6e94e86db746ec29--timely-marigold-234ac2.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+                <a
+                  href="https://github.com/geetanjalising/Treasure-Hunter"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaCode />
+                </a>
               </div>
             </div>
             <div className=" tilt-effect description" data-aos="zoom-in-right">
@@ -304,11 +327,20 @@ const Project = () => {
               <div className="info">
                 <h1>Todo-App</h1>
                 <hr></hr>
-                <button>
-                  <a href="https://geetanjalising.github.io/To-Do-App/">
-                    Preview
-                  </a>
-                </button>
+                <a
+                  href="https://geetanjalising.github.io/To-Do-App/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaExternalLinkAlt />
+                </a>
+                <a
+                  href="https://github.com/geetanjalising/To-Do-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaCode />
+                </a>
               </div>
             </div>
             <div className=" tilt-effect description" data-aos="zoom-in-left">

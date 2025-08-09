@@ -1,0 +1,112 @@
+.experience-container {
+  height: 100%;
+}
+
+.experience-section {
+  scroll-snap-align: start;
+  /* height: 100vh; */
+  padding: 2rem;
+  background-color: rgb(25, 42, 58, 0);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-bottom: 10vw
+}
+
+/* .experience-section:hover {
+  background-color: rgb(31, 47, 63, 0.8);
+} */
+
+.experience-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.experience-heading {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  width: 90vw;
+  color: #c2bcbc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  justify-content: center;
+}
+
+.experience-heading hr {
+  background-color: #e6e2e2;
+  width: 80vh;
+  margin-top: 19px;
+}
+
+.separator-line {
+  width: 1px;
+  margin: 10px;
+  height: 280px;
+  background-color: #8f8e8e;
+}
+.experience-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.abc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cde {
+  width: 50%;
+}
+
+.rotating-icon {
+  position: fixed;
+  left: 15%;
+  top: 70%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 300px;
+  opacity: 0.07; /* subtle, like in screenshot */
+  z-index: -1; /* behind content */
+  will-change: transform; /* smoother animation */
+  pointer-events: none; /* clicks go through */
+}
+
+.rotating-icon svg {
+  width: 100%;
+  height: auto;
+  color: #fff; /* wheel color */
+}
+.company {
+  font-size: 35px;
+  color: aquamarine;
+}
+.left-part p {
+  display: flex;
+  /* align-items: center; */
+  gap: 20px; /* space between date and location */
+  width: 155px; /* increase width so both fit */
+  flex-shrink: 0; /* don’t let it get squished */
+}
+
+.custom-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* spacing between icon and text */
+  margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-size: smaller;
+}
+
+.bullet-icon {
+  color: #2485a2;
+  margin-top: 4px; /* aligns icon better with multi-line text */
+  min-width: 20px;  /* makes all icons align uniformly */
+}
+

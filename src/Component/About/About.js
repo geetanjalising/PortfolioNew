@@ -1,13 +1,35 @@
 import React, { useEffect, useRef, useState } from "react";
 import pic from "./me.jpeg";
 import gfg from "./gfg.png";
-import codechef from "./codechef.jpg";
+import codechef from "./codechef.png";
 import hackerrank from "./hhackerrank.png";
 import leetcode from "./leetcode.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import "./About.css";
+import { RxTriangleRight } from "react-icons/rx";
 
+const skills1 = [
+  "HTML/CSS",
+  "JavaScript",
+  "React.js",
+  "Node.js",
+  "Express.js",
+  "C/C++",
+  "Java",
+  "MongoDB",
+];
+
+const skills2 = [
+  "Data Structures & Algorithms",
+  "Object-Oriented Programming",
+  "Database Management Systems",
+  "Software Engineering",
+  "MongoDB Atlas",
+  "Git/GitHub",
+  "Postman",
+  "SQL",
+];
 const About = () => {
   useEffect(() => {
     AOS.init({
@@ -45,6 +67,37 @@ const About = () => {
               my coding fluency but also enhanced my analytical thinking and the
               ability to write optimized, scalable code under constraints—skills
               that naturally carry over into my work as a developer.
+              <div data-aos="zoom-in-left">
+                <a
+                  href="https://auth.geeksforgeeks.org/user/geetanjalisingh1815/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={gfg} alt="gfg"></img>
+                </a>
+                <a
+                  href="https://leetcode.com/Geetanjali_singh1815/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={leetcode} alt="leetcode"></img>
+                </a>
+
+                <a
+                  href="https://www.hackerrank.com/geetanjalisingh?hr_r=1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={codechef} alt="hackerrank"></img>
+                </a>
+                <a
+                  href="https://www.codechef.com/users/geetanjalising"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img src={hackerrank} alt="codechef"></img>
+                </a>
+              </div>
             </p>
             <p data-aos="zoom-in-left">
               I believe that building great software requires more than
@@ -56,6 +109,7 @@ const About = () => {
               environments where knowledge is shared openly and where challenges
               are seen as opportunities to grow.
             </p>
+
             <p data-aos="zoom-in-left">
               Outside of work, I’m always exploring ways to improve—not just as
               a developer, but as a person. Whether it’s learning new
@@ -73,33 +127,23 @@ const About = () => {
             <div className="skillBody">
               <div className="subpart">
                 <ul>
-                  <li data-aos="fade-left">HTML/CSS</li>
-                  <li data-aos="fade-left">JavaScript</li>
-                  <li data-aos="fade-left">React.js</li>
-                  <li data-aos="fade-left">Node.js</li>
-                  <li data-aos="fade-left">Express.js</li>
-                  <li data-aos="fade-left">C/C++</li>
-                  <li data-aos="fade-left">Java</li>
-                  <li data-aos="fade-left">MongoDB</li>
-                  <li data-aos="fade-left">SQL</li>
+                  {skills1.map((skill, index) => (
+                    <li data-aos="fade-left" key={index}>
+                      <RxTriangleRight className="bullet-icon" />
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
               </div>
 
-              {/* CS Fundamentals */}
               <div className="subpart">
                 <ul>
-                  <li data-aos="fade-left">Data Structures & Algorithms</li>
-                  <li data-aos="fade-left">
-                    Object-Oriented Programming (OOP)
-                  </li>
-                  <li data-aos="fade-left">
-                    Database Management Systems (DBMS)
-                  </li>
-                  <li data-aos="fade-left">Software Engineering</li>
-                  <li data-aos="fade-left">MongoDB Atlas</li>
-                  <li data-aos="fade-left">Git/GitHub</li>
-                  <li data-aos="fade-left">Postman</li>
-                  <li data-aos="fade-left">VSCode</li>
+                  {skills2.map((skill, index) => (
+                    <li data-aos="fade-left" key={index}>
+                      <RxTriangleRight className="bullet-icon" />
+                      {skill}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

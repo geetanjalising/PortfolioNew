@@ -101,7 +101,7 @@
   align-items: flex-end;
   box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .preview.animate {
   transform: scale(1.2);
@@ -132,21 +132,27 @@
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s all;
-  font-style: italic;
+  /* font-style: italic; */
 }
-.info h1{
-  color: #08327e;
-  text-shadow:0.5px 0.1px 1px #ccc;
+.info h1 {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(85, 255, 255, 0.6);
+  font-weight: bold;
 }
-.info button a {
-  text-decoration: none;
+
+.info a {
+  color: #00e0ff;
+  font-size: 20px;
+  margin: 10px;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
-.info button {
-  border-radius: 4px;
+
+.info a:hover {
+  color: #fff;
+  transform: scale(1.2);
 }
-.info button:hover {
-  box-shadow: 1px 4px 4px rgb(124, 112, 93);
-}
+
+
 .preview:hover .info {
   opacity: 1;
   transform: translateY(0px);

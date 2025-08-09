@@ -1,4 +1,3 @@
-
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { useEffect, useMemo, useState } from "react";
 // import { loadAll } from "@/tsparticles/all"; // if you are going to use `loadAll`, install the "@tsparticles/all" package too.
@@ -6,36 +5,48 @@ import { useEffect, useMemo, useState } from "react";
 import { loadSlim } from "@tsparticles/slim"; // if you are going to use `loadSlim`, install the "@tsparticles/slim" package too.
 // import { loadBasic } from "@tsparticles/basic"; // if you are going to use `loadBasic`, install the "@tsparticles/basic" package too.
 
-
-
 const ParticlesComponent = (props) => {
-
   const [init, setInit] = useState(false);
-  // this should be run only once per application lifetime
+  const [bgColor, setBgColor] = useState("#070b27ff");
+
   useEffect(() => {
     initParticlesEngine(async (engine) => {
-      // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-      // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-      // starting from v2 you can add only the features you need reducing the bundle size
-      //await loadAll(engine);
-      //await loadFull(engine);
       await loadSlim(engine);
-      //await loadBasic(engine);
     }).then(() => {
       setInit(true);
     });
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      if (scrollY < 500) {
+        setBgColor("#070b27ff");
+      } else if (scrollY < 2000) {
+        setBgColor("#0e1f45ff");
+      } else if (scrollY <3800) {
+        setBgColor("#0d1d20ff");
+      } else if (scrollY < 8000) {
+        setBgColor("#0c062bff");
+      } else {
+        setBgColor("#070b27ff");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const particlesLoaded = (container) => {
     console.log(container);
   };
 
-
   const options = useMemo(
     () => ({
       background: {
         color: {
-          value: "#070b27ff",
+          value: bgColor,
         },
       },
       fpsLimit: 120,
@@ -47,7 +58,7 @@ const ParticlesComponent = (props) => {
           },
           onHover: {
             enable: true,
-            mode: 'grab',
+            mode: "grab",
           },
         },
         modes: {
@@ -85,7 +96,7 @@ const ParticlesComponent = (props) => {
           density: {
             enable: true,
           },
-          value: 150,
+          value: 170,
         },
         opacity: {
           value: 1.0,
@@ -99,11 +110,10 @@ const ParticlesComponent = (props) => {
       },
       detectRetina: true,
     }),
-    [],
+    [bgColor]
   );
 
-
-  return <Particles id={props.id} init={particlesLoaded} options={options} />; 
+  return <Particles id={props.id} init={particlesLoaded} options={options} />;
 };
 
 export default ParticlesComponent;

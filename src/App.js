@@ -6,7 +6,7 @@ import Project from "./Component/Project/Project";
 import Experience from "./Component/Experience/Experience";
 import { GiHamburgerMenu } from "react-icons/gi";
 import React, { useEffect, useState, useRef } from "react";
-import { FaArrowAltCircleUp } from "react-icons/fa";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import AnimatedCursor from "react-animated-cursor";
 import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
@@ -17,6 +17,7 @@ function App() {
   const section2 = useRef();
   const section3 = useRef();
   const section4 = useRef();
+  const section5 = useRef();
   const toTop = useRef();
 
   const [showHamb, setHamb] = useState(false);
@@ -30,7 +31,6 @@ function App() {
   useEffect(() => {
     const handleScroll = (event) => {
       if (window.scrollY > 500) {
-        // alert("yo");
         setShow(true);
       } else {
         setShow(false);
@@ -52,10 +52,36 @@ function App() {
       <header>
         <div className={showHamb ? "mobileview" : "nav"}>
           <ul>
-            <li onClick={() => scrollHandler(section1)}>Start</li>
-            <li onClick={() => scrollHandler(section2)}>About</li>
-            <li onClick={() => scrollHandler(section3)}>Work</li>
-            <li onClick={() => scrollHandler(section4)}>Contact</li>
+            <li
+              onClick={() => scrollHandler(section1)}
+              style={{ cursor: "pointer" }}
+            >
+              Start
+            </li>
+            <li
+              onClick={() => scrollHandler(section2)}
+              style={{ cursor: "pointer" }}
+            >
+              About
+            </li>
+            <li
+              onClick={() => scrollHandler(section3)}
+              style={{ cursor: "pointer" }}
+            >
+              Experience
+            </li>
+            <li
+              onClick={() => scrollHandler(section4)}
+              style={{ cursor: "pointer" }}
+            >
+              Work
+            </li>
+            <li
+              onClick={() => scrollHandler(section5)}
+              style={{ cursor: "pointer" }}
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </header>
@@ -68,15 +94,15 @@ function App() {
         <About />
       </div>
 
-      <div className="sec4">
+      <div ref={section3} className="sec3">
         <Experience />
       </div>
 
-      <div ref={section3} className="sec3">
+      <div ref={section4} className="sec4">
         <Project />
       </div>
 
-      <div ref={section4} className="sec4">
+      <div ref={section5} className="sec5">
         <Contact />
       </div>
 
@@ -85,7 +111,7 @@ function App() {
           position: "fixed",
           right: 10,
           bottom: 20,
-          color: "green",
+          color: "white",
           marginRight: 15,
           cursor: "pointer",
         }}
@@ -93,7 +119,7 @@ function App() {
       >
         {show && (
           <h1>
-            <FaArrowAltCircleUp />
+            <FaRegArrowAltCircleUp />
           </h1>
         )}
       </div>
@@ -111,6 +137,8 @@ function App() {
               cursor: "pointer",
             }}
             href="https://www.linkedin.com/in/geetanjali-singh-564324203/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedin />
           </a>
@@ -123,6 +151,8 @@ function App() {
               cursor: "pointer",
             }}
             href="https://github.com/geetanjalising"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaGithub />
           </a>
@@ -135,6 +165,8 @@ function App() {
               cursor: "pointer",
             }}
             href="https://twitter.com/Geetanj21944077"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaTwitter />
           </a>
@@ -147,6 +179,8 @@ function App() {
               cursor: "pointer",
             }}
             href="https://www.instagram.com/geetanjalisingh1815/?next=%2F&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaInstagram />
           </a>

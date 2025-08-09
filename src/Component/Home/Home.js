@@ -7,7 +7,7 @@ import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
 const Home = () => {
   const refItem = useRef();
-  const isInview = useInView(refItem, { once: true });
+  const isInview = useInView(refItem, { once: false });
   useEffect(() => {
     console.log(isInview);
   }, [isInview]);
@@ -26,12 +26,6 @@ const Home = () => {
             transition={{ duration: 1.5, delay: 0.25 }}
           >
             <div className="intro">
-              <div className="icons">
-                <a href="https://drive.google.com/file/d/1N2wCyT4xoXaJEhv2YJOhiway7xpaV2hm/view?usp=sharing">
-                  <button className="resume">Resume</button>
-                </a>
-              </div>
-
               <h1>Hi, my name is Geetanjali Singh</h1>
               <div className="d">
                 <div className="d1">i am &nbsp; </div>
@@ -62,10 +56,21 @@ const Home = () => {
                 I’m continuously evolving as a full-stack developer, focused on
                 creating impactful, high-performance solutions.
               </p>
-             <a href="mailto:geetanjalisingh1815@gmail.com">
-  <button className="offset">Contact Me</button>
-</a>
- 
+              <div className="links">
+                <a
+                  href="mailto:geetanjalisingh1815@gmail.com"
+                  rel="noopener noreferrer"
+                >
+                  <button className="offset">Contact Me</button>
+                </a>
+                <a
+                  href="https://drive.google.com/file/d/1N2wCyT4xoXaJEhv2YJOhiway7xpaV2hm/view?usp=sharing"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="offset">Resume</button>
+                </a>
+              </div>
             </div>
           </motion.div>
         </div>

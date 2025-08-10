@@ -126,6 +126,7 @@ h3 {
   .about-section {
     width: 85%;
     padding: 0px 0px;
+    overflow-x: hidden;
   }
 
   .aboutBody {
@@ -138,6 +139,13 @@ h3 {
     flex-direction: column-reverse;
     gap: 0px;
     align-items: start;
+    text-align: start;
     width: 80%;
+  }
+  .about-heading {
+    gap:15px
+  }
+  .about-heading hr {
+    margin-top: 32px;
   }
 }

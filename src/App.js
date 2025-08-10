@@ -5,6 +5,8 @@ import Contact from "./Component/Contact/Contact";
 import Project from "./Component/Project/Project";
 import Experience from "./Component/Experience/Experience";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
+
 import React, { useEffect, useState, useRef } from "react";
 import { FaRegArrowAltCircleUp } from "react-icons/fa";
 import AnimatedCursor from "react-animated-cursor";
@@ -125,7 +127,7 @@ function App() {
       </div>
       <div className="Hamburger">
         <a href="#" onClick={() => setHamb(!showHamb)}>
-          <GiHamburgerMenu />
+          <HiOutlineMenuAlt3 className="Hamburger-icon" />
         </a>
       </div>
       <div className="sidebar">

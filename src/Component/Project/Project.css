@@ -1,4 +1,4 @@
-.bd {
+.project-body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,11 +16,6 @@
 }
 
 .project1 {
-  /* background: linear-gradient(
-    to right,
-    rgba(196, 146, 242, 0.4),
-    rgb(238, 130, 238, 0)
-  ); */
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -31,11 +26,6 @@
   padding: 40px;
 }
 .project2 {
-  /* background: linear-gradient(
-    to left,
-    rgb(0, 255, 255, 0.4),
-    rgb(0, 255, 255, 0)
-  ); */
   text-align: center;
   display: flex;
   flex-direction: row-reverse;
@@ -45,11 +35,6 @@
   padding: 40px;
 }
 .project3 {
-  /* background: linear-gradient(
-    to right,
-    rgb(154, 205, 50, 0.4),
-    rgb(154, 205, 50, 0)
-  ); */
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -68,12 +53,6 @@
   transition: transform 6s ease, opacity 0.5s ease;
 }
 
-/* Animate on scroll */
-/* .description.animate {
-  transform: translateX(0px);
-  opacity: 1;
-} */
-
 .tilt-effect {
   background: radial-gradient(
     circle at center,
@@ -91,7 +70,6 @@
 .tilt-effect:hover {
   box-shadow: 0 16px 32px rgba(161, 172, 195, 0.2);
 }
-/* preview ui starts */
 .preview {
   height: 250px;
   width: 230px;
@@ -132,7 +110,6 @@
   opacity: 0;
   transform: translateY(30px);
   transition: 0.5s all;
-  /* font-style: italic; */
 }
 .info h1 {
   color: #ffffff;
@@ -152,15 +129,12 @@
   transform: scale(1.2);
 }
 
-
 .preview:hover .info {
   opacity: 1;
   transform: translateY(0px);
 }
-/* previe ui ends */
 
 .project-heading {
-  /* font-family: "Poppins", sans-serif; */
   text-align: center;
   font-size: 2.5rem;
   color: #c2bcbc;
@@ -177,23 +151,23 @@
 .project-heading hr {
   flex: 1;
   height: 0.5px;
-  background-color: #737070; /* or your preferred color */
+  background-color: #737070;
   border: none;
   margin-top: 19px;
 }
 .tech-used {
   display: flex;
-  flex-wrap: wrap; /* allow wrapping if space runs out */
-  gap: 10px; /* optional, space between items */
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 20px;
 }
 
 .tech-used .items {
-  display: inline-flex; /* so icon + text are aligned */
+  display: inline-flex;
   align-items: center;
-  padding: 5px 10px; /* optional, for better spacing */
-  border: 1px solid #ccc; /* optional, if you want border */
-  border-radius: 5px; /* optional, for rounded look */
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
   cursor: default;
   border-image-slice: 1;
   border-width: 2px;
@@ -203,4 +177,54 @@
 .tech-used .items:hover {
   border-style: solid;
   border-image: linear-gradient(rgba(12, 56, 78), rgba(56, 79, 35)) 1;
+}
+@media (max-width: 768px) {
+  .project1 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+  .project2 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+  .project3 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 40px;
+  }
+
+  .description {
+    width: 97%;
+    text-align: center;
+  }
+.project{
+  gap: 110px;
+}
+  .project-heading {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    width: 100%;
+  }
+  .project-heading hr {
+  display: none;
+}
+  .preview {
+    width: 80%;
+    /* height: auto; */
+    padding: 1rem;
+  }
+
+  .tech-used {
+    justify-content: center;
+  }
+
+  .project p {
+    text-align: center;
+  }
+  .tilt-effect {
+    padding: 4px;
+  }
 }

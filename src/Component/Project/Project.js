@@ -112,7 +112,7 @@ const Project = () => {
         <h3>Things I've Worked on</h3>
         <hr />
       </div>
-      <div className="bd">
+      <div className="project-body">
         <div className="project">
           <div className="project1">
             <div

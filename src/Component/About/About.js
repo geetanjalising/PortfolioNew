@@ -109,7 +109,6 @@ const About = () => {
               environments where knowledge is shared openly and where challenges
               are seen as opportunities to grow.
             </p>
-
             <p data-aos="zoom-in-left">
               Outside of work, I’m always exploring ways to improve—not just as
               a developer, but as a person. Whether it’s learning new

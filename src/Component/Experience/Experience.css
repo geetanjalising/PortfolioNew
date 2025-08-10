@@ -119,8 +119,13 @@
     flex-wrap: wrap;
   }
 
+  .experience-heading {
+    font-size: 2rem;
+    gap: 15px;
+  }
   .experience-heading hr {
-    width: 60%;
+    margin-top: 90px;
+    height: 0.01px;
   }
   .separator-line {
     display: none;

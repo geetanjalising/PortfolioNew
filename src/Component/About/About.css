@@ -1,14 +1,4 @@
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-repeat: no-repeat;
-  background-size: cover;
-  z-index: -1;
-  padding: 0;
-  margin: 0;
-  color: rgb(150, 246, 6);
-}
+
 li {
   list-style: none;
 }
@@ -18,196 +8,12 @@ h1 {
 h3 {
   margin: 5px;
 }
-.about {
-  width: 70%;
-  height: fit-content;
-  background-color: rgb(8, 9, 9, 0.7);
-  margin-top: 20px;
-  margin-bottom: 60px;
-  border: 2px solid black;
-  border-radius: 30px;
-  box-shadow: 5px 5px 5px #696060;
-  z-index: 1;
-  font-size: large;
-}
 
-.head {
-  display: flex;
-  justify-content: center;
-}
-.skills {
-  margin-left: 45px;
-}
-.skill {
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.skill h3 {
-  margin: 10px;
-}
-.skill1 {
-  width: 35%;
-}
 .skill2 {
   width: 35%;
 }
-.bar {
-  background: #2b5cbf;
-  display: block;
-  height: 2px;
-  border: 1px solid rgba(127, 61, 61, 0.3);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-}
 
-.bar:hover {
-  box-shadow: 10 14px 28px rgba(247, 226, 226, 0.25),
-    0 10px 10px rgba(249, 243, 243, 0.22);
-}
-.bar span {
-  height: 20px;
-  float: left;
-  background: linear-gradient(
-    135deg,
-    rgba(236, 0, 140, 1) 0%,
-    rgba(252, 103, 103, 1) 100%
-  );
-}
-.html {
-  width: 80%;
-  animation: html 3s;
-}
-.css {
-  width: 70%;
-  animation: css 3s;
-}
-.js {
-  width: 70%;
-  animation: js 3s;
-}
-.cpp {
-  width: 80%;
-  animation: cpp 3s;
-}
-.datstr {
-  width: 70%;
-  animation: datstr 3s;
-}
-.react {
-  width: 70%;
-  animation: react 3s;
-}
-.node {
-  width: 60%;
-  animation: node 3s;
-}
-.express {
-  width: 60%;
-  animation: express 3s;
-}
-.mongodb {
-  width: 50%;
-  animation: mongodb 3s;
-}
-.sql {
-  width: 50%;
-  animation: sql 3s;
-}
-@keyframes html {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes css {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes js {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes cpp {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 80%;
-  }
-}
-@keyframes datstr {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes react {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 70%;
-  }
-}
-@keyframes node {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@keyframes express {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 60%;
-  }
-}
-@keyframes mongodb {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes sql {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
 
-.education {
-  margin-left: 45px;
-  margin-right: 50px;
-}
-.head h1 {
-  color: #bea9a9;
-  font-weight: 50;
-  font-size: 40px;
-  text-shadow: 2px 2px rgb(73, 69, 69);
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
 .about-paragraphs img {
   scale: 0.6 0.6;
   margin-right: 10px;
@@ -218,16 +24,6 @@ h3 {
   transform: scale(1.1); /* scale to 110% */
 }
 
-@keyframes scale {
-  to {
-    transform: scale(1.3);
-  }
-}
-/* @media screen and (max-width: 800px) {
-  .about {
-    width: 80%;
-  }
-} */
 
 .about-section {
   padding: 60px 20px;

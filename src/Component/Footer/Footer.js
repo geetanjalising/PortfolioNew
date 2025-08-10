@@ -1,4 +1,3 @@
-import React, { useEffect, useRef } from "react";
 import {
   FaHome,
   FaPhone,
@@ -7,7 +6,6 @@ import {
   FaWhatsapp,
   FaTelegramPlane,
 } from "react-icons/fa";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
 
 import "./Footer.css";
 const Footer = () => {

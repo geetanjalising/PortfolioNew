@@ -1,14 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import "./Project.css";
 import Todo from "./todo.png";
 import Puzzle from "./Puzzle.png";
-import Android from "./android.jpeg";
 import Ecommerce from "./e-commerce.png";
 import {
-  FaLinkedin,
-  FaGithub,
-  FaTwitter,
-  FaInstagram,
   FaHtml5,
   FaCss3Alt,
   FaReact,
@@ -155,70 +150,70 @@ const Project = () => {
                 users and products. Built admin dashboards for managing users
                 and inventory, enhancing user experience with personalized
                 sessions and intuitive UI across devices.
-                <div className="tech-used">
-                  <span className="items">
-                    <span style={{ color: "red", marginRight: "5px" }}>
-                      <FaHtml5 />
-                    </span>
-                    HTML
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "orange", marginRight: "5px" }}>
-                      <FaCss3Alt />
-                    </span>
-                    CSS
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "blue", marginRight: "5px" }}>
-                      <SiJavascript />
-                    </span>
-                    JavaScript
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "green", marginRight: "5px" }}>
-                      <FaReact />
-                    </span>
-                    React.js
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "purple", marginRight: "5px" }}>
-                      <FaNodeJs />
-                    </span>
-                    Node.js
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "pink", marginRight: "5px" }}>
-                      <SiExpress />
-                    </span>
-                    Express
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "cyan", marginRight: "5px" }}>
-                      <SiMongodb />
-                    </span>
-                    MongoDB
-                  </span>
-
-                  <span className="items">
-                    <span style={{ color: "gold", marginRight: "5px" }}>
-                      <SiPostman />
-                    </span>
-                    Postman
-                  </span>
-                  <span className="items">
-                    <span style={{ color: "gold", marginRight: "5px" }}>
-                      <SiRedux />
-                    </span>
-                    Redux
-                  </span>
-                </div>
               </p>
+              <div className="tech-used">
+                <span className="items">
+                  <span style={{ color: "red", marginRight: "5px" }}>
+                    <FaHtml5 />
+                  </span>
+                  HTML
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "orange", marginRight: "5px" }}>
+                    <FaCss3Alt />
+                  </span>
+                  CSS
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "blue", marginRight: "5px" }}>
+                    <SiJavascript />
+                  </span>
+                  JavaScript
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "green", marginRight: "5px" }}>
+                    <FaReact />
+                  </span>
+                  React.js
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "purple", marginRight: "5px" }}>
+                    <FaNodeJs />
+                  </span>
+                  Node.js
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "pink", marginRight: "5px" }}>
+                    <SiExpress />
+                  </span>
+                  Express
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "cyan", marginRight: "5px" }}>
+                    <SiMongodb />
+                  </span>
+                  MongoDB
+                </span>
+
+                <span className="items">
+                  <span style={{ color: "gold", marginRight: "5px" }}>
+                    <SiPostman />
+                  </span>
+                  Postman
+                </span>
+                <span className="items">
+                  <span style={{ color: "gold", marginRight: "5px" }}>
+                    <SiRedux />
+                  </span>
+                  Redux
+                </span>
+              </div>
             </div>
           </div>
 

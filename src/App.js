@@ -4,7 +4,6 @@ import About from "./Component/About/About";
 import Contact from "./Component/Contact/Contact";
 import Project from "./Component/Project/Project";
 import Experience from "./Component/Experience/Experience";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
 import React, { useEffect, useState, useRef } from "react";

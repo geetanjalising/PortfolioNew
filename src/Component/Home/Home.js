@@ -1,9 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import "./Home.css";
 import Typical from "react-typical";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import ParticlesComponent from "./particles";
-import { motion, useInView, useAnimation, useIsPresent } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 
 const Home = () => {
   const refItem = useRef();

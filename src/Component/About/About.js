@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect} from "react";
 import pic from "./me.jpeg";
 import gfg from "./gfg.png";
 import codechef from "./codechef.png";
@@ -57,17 +57,20 @@ const About = () => {
               defines my approach is a continuous drive to learn, grow, and
               contribute in impactful ways.
             </p>
-            <p data-aos="zoom-in-left">
-              One of the areas I take the most pride in is my strength in data
-              structures and algorithmic problem-solving. Over the years, I’ve
-              dedicated consistent time to sharpening these skills, solving
-              1000+ problems on GeeksforGeeks, 500+ problems on LeetCode, and
-              earning a 5-star rating in C and C++ and a 4-star rating in
-              Problem Solving on HackerRank. This practice has not only improved
-              my coding fluency but also enhanced my analytical thinking and the
-              ability to write optimized, scalable code under constraints—skills
-              that naturally carry over into my work as a developer.
-              <div>
+            <div className="coding-handles">
+              <p data-aos="zoom-in-left">
+                One of the areas I take the most pride in is my strength in data
+                structures and algorithmic problem-solving. Over the years, I’ve
+                dedicated consistent time to sharpening these skills, solving
+                1000+ problems on GeeksforGeeks, 500+ problems on LeetCode, and
+                earning a 5-star rating in C and C++ and a 4-star rating in
+                Problem Solving on HackerRank. This practice has not only
+                improved my coding fluency but also enhanced my analytical
+                thinking and the ability to write optimized, scalable code under
+                constraints—skills that naturally carry over into my work as a
+                developer.
+              </p>
+              <div className="coding-icons" data-aos="zoom-in-left">
                 <a
                   href="https://auth.geeksforgeeks.org/user/geetanjalisingh1815/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"
                   target="_blank"
@@ -98,7 +101,7 @@ const About = () => {
                   <img src={hackerrank} alt="codechef"></img>
                 </a>
               </div>
-            </p>
+            </div>
             <p data-aos="zoom-in-left">
               I believe that building great software requires more than
               technical skill—it demands thoughtful communication,

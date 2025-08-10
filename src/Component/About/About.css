@@ -54,6 +54,20 @@ h3 {
   padding: 15px 20px;
   border-radius: 12px;
 }
+.coding-handles p{
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.8;
+  margin-bottom: 0px;
+  color: #3dc8c6;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+.coding-icons{
+  margin-top: -20px;
+    padding: 1px 10px;
+    margin-bottom: 20px;
+}
 .aboutBody {
   display: flex;
   flex-direction: row;

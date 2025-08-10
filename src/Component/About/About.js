@@ -67,7 +67,7 @@ const About = () => {
               my coding fluency but also enhanced my analytical thinking and the
               ability to write optimized, scalable code under constraints—skills
               that naturally carry over into my work as a developer.
-              <div data-aos="zoom-in-left">
+              <div>
                 <a
                   href="https://auth.geeksforgeeks.org/user/geetanjalisingh1815/?utm_source=geeksforgeeks&utm_medium=my_profile&utm_campaign=auth_user"
                   target="_blank"
@@ -153,7 +153,6 @@ const About = () => {
           </div>
         </div>
       </section>
-   
     </>
   );
 };

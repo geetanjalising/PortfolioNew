@@ -4,18 +4,13 @@
 
 .experience-section {
   scroll-snap-align: start;
-  /* height: 100vh; */
   padding: 2rem;
   background-color: rgb(25, 42, 58, 0);
   color: #fff;
   cursor: pointer;
   transition: background-color 0.5s ease;
-  margin-bottom: 10vw
+  margin-bottom: 10vw;
 }
-
-/* .experience-section:hover {
-  background-color: rgb(31, 47, 63, 0.8);
-} */
 
 .experience-section h2 {
   display: flex;
@@ -56,12 +51,12 @@
   justify-content: flex-start;
 }
 
-.abc {
+.experience-data {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.cde {
+.experience-body {
   width: 50%;
 }
 
@@ -71,16 +66,16 @@
   top: 70%;
   transform: translateY(-50%) rotate(0deg);
   width: 300px;
-  opacity: 0.07; /* subtle, like in screenshot */
-  z-index: -1; /* behind content */
-  will-change: transform; /* smoother animation */
-  pointer-events: none; /* clicks go through */
+  opacity: 0.07;
+  z-index: -1;
+  will-change: transform;
+  pointer-events: none;
 }
 
 .rotating-icon svg {
   width: 100%;
   height: auto;
-  color: #fff; /* wheel color */
+  color: #fff;
 }
 .company {
   font-size: 35px;
@@ -88,25 +83,46 @@
 }
 .left-part p {
   display: flex;
-  /* align-items: center; */
-  gap: 20px; /* space between date and location */
-  width: 155px; /* increase width so both fit */
-  flex-shrink: 0; /* don’t let it get squished */
+  gap: 20px;
+  width: 155px;
+  flex-shrink: 0;
 }
 
 .custom-li {
   display: flex;
   align-items: flex-start;
-  gap: 10px; /* spacing between icon and text */
+  gap: 10px;
   margin-bottom: 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-size: smaller;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: smaller;
 }
 
 .bullet-icon {
   color: #2485a2;
-  margin-top: 4px; /* aligns icon better with multi-line text */
-  min-width: 20px;  /* makes all icons align uniformly */
+  margin-top: 4px;
+  min-width: 20px;
 }
 
+@media (max-width: 768px) {
+  .experience-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-body {
+    width: 100%;
+  }
+
+  .left-part p {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .experience-heading hr {
+    width: 60%;
+  }
+  .separator-line {
+    display: none;
+  }
+}

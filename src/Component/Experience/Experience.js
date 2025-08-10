@@ -52,8 +52,8 @@ const Experience = () => {
             <hr />
           </div>
 
-          <div className="abc">
-            <div className="cde">
+          <div className="experience-data">
+            <div className="experience-body">
               <div className="company">
                 {" "}
                 <p data-aos="zoom-in-right">
@@ -91,8 +91,8 @@ const Experience = () => {
         </section>
 
         <section className="experience-section">
-          <div className="abc">
-            <div className="cde">
+          <div className="experience-data">
+            <div className="experience-body">
               <div className="company">
                 {" "}
                 <p data-aos="zoom-in-right">
@@ -130,8 +130,8 @@ const Experience = () => {
         </section>
 
         <section className="experience-section">
-          <div className="abc">
-            <div className="cde">
+          <div className="experience-data">
+            <div className="experience-body">
               <div className="company">
                 {" "}
                 <p data-aos="zoom-in-right">Problem Setter @ Imocha</p>

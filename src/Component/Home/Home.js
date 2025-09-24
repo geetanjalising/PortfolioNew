@@ -63,7 +63,7 @@ const Home = () => {
                   <button className="offset">Contact Me</button>
                 </a>
                 <a
-                  href="https://drive.google.com/file/d/1N2wCyT4xoXaJEhv2YJOhiway7xpaV2hm/view?usp=sharing"
+                  href="https://drive.google.com/file/d/1EzJhdCuR2cfr1EaCIwuTI6u5C8_jhYHl/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

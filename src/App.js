@@ -187,11 +187,7 @@ function App() {
           </a>
         </span>
         <div
-          style={{
-            width: "1px",
-            height: "100px",
-            backgroundColor: "rgb(130, 223, 223)",
-          }}
+       className="sidebar-hrline"
         ></div>
       </div>
 

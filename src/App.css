@@ -30,9 +30,9 @@
   margin-left: 50%;
   font-size: x-large;
   /* position: fixed; */
-  background-color: rgb(23, 22, 22,0.9);
+  background-color: rgb(23, 22, 22, 0.9);
   justify-content: space-around;
- z-index: 99;
+  z-index: 99;
   align-items: flex-end;
   color: aliceblue;
 }
@@ -73,10 +73,21 @@
   margin-left: 15px;
   gap: 10px;
 }
+.sidebar-hrline {
+  width: 1px;
+  height: 100px;
+  background-color: rgb(130, 223, 223);
+}
 @media (max-width: 768px) {
   .sidebar {
     left: 0px;
     margin-left: 4px;
     gap: 4px;
+  }
+
+  .sidebar-hrline {
+    width: 1px;
+    height: 80px;
+    background-color: rgb(130, 223, 223);
   }
 }

@@ -1,0 +1,133 @@
+.experience-container {
+  height: 100%;
+}
+
+.experience-section {
+  scroll-snap-align: start;
+  padding: 2rem;
+  background-color: rgb(25, 42, 58, 0);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+  margin-bottom: 10vw;
+}
+
+.experience-section h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.experience-heading {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 100px;
+  width: 90vw;
+  color: #c2bcbc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  justify-content: center;
+}
+
+.experience-heading hr {
+  background-color: #e6e2e2;
+  width: 80vh;
+  margin-top: 19px;
+}
+
+.separator-line {
+  width: 1px;
+  margin: 10px;
+  height: 280px;
+  background-color: #8f8e8e;
+}
+.experience-data {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.experience-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.experience-body {
+  width: 50%;
+}
+
+.rotating-icon {
+  position: fixed;
+  left: 15%;
+  top: 70%;
+  transform: translateY(-50%) rotate(0deg);
+  width: 300px;
+  opacity: 0.07;
+  z-index: -1;
+  will-change: transform;
+  pointer-events: none;
+}
+
+.rotating-icon svg {
+  width: 100%;
+  height: auto;
+  color: #fff;
+}
+.company {
+  font-size: 35px;
+  color: aquamarine;
+}
+.left-part p {
+  display: flex;
+  gap: 20px;
+  width: 155px;
+  flex-shrink: 0;
+}
+
+.custom-li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-size: smaller;
+}
+
+.bullet-icon {
+  color: #2485a2;
+  margin-top: 4px;
+  min-width: 20px;
+}
+
+@media (max-width: 768px) {
+  .experience-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .experience-body {
+    width: 100%;
+  }
+
+  .left-part p {
+    width: auto;
+    flex-wrap: wrap;
+  }
+
+  .experience-heading {
+    font-size: 2rem;
+    gap: 15px;
+  }
+  .experience-heading hr {
+    margin-top: 90px;
+    height: 0.01px;
+  }
+  .separator-line {
+    display: none;
+  }
+}

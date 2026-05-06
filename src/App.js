@@ -1,13 +1,15 @@
-import "./App.css"
+import "./App.css";
 import Home from "./Component/Home/Home";
 import About from "./Component/About/About";
 import Contact from "./Component/Contact/Contact";
 import Project from "./Component/Project/Project";
-import { GiHamburgerMenu } from "react-icons/gi";
-import React, { useEffect, useState, useRef } from "react";
-import { FaArrowAltCircleUp } from "react-icons/fa";
-import AnimatedCursor from "react-animated-cursor"
+import Experience from "./Component/Experience/Experience";
+import { HiOutlineMenuAlt3 } from "react-icons/hi";
 
+import React, { useEffect, useState, useRef } from "react";
+import { FaRegArrowAltCircleUp } from "react-icons/fa";
+import AnimatedCursor from "react-animated-cursor";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
 
 function App() {
   //Refs are useful when getting user input, DOM element properties and storing constantly updating values. However if you are storing component related info or use methods in components states are the best option.
@@ -16,6 +18,7 @@ function App() {
   const section2 = useRef();
   const section3 = useRef();
   const section4 = useRef();
+  const section5 = useRef();
   const toTop = useRef();
 
   const [showHamb, setHamb] = useState(false);
@@ -29,10 +32,8 @@ function App() {
   useEffect(() => {
     const handleScroll = (event) => {
       if (window.scrollY > 500) {
-        // alert("yo");
         setShow(true);
-      }
-      else {
+      } else {
         setShow(false);
       }
     };
@@ -47,44 +48,149 @@ function App() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-
-
   return (
     <>
       <header>
         <div className={showHamb ? "mobileview" : "nav"}>
           <ul>
-            <li onClick={() => scrollHandler(section1)}>Start</li>
-            <li onClick={() => scrollHandler(section2)}>About</li>
-            <li onClick={() => scrollHandler(section3)}>Work</li>
-            <li onClick={() => scrollHandler(section4)}>Contact</li>
+            <li
+              onClick={() => scrollHandler(section1)}
+              style={{ cursor: "pointer" }}
+            >
+              Start
+            </li>
+            <li
+              onClick={() => scrollHandler(section2)}
+              style={{ cursor: "pointer" }}
+            >
+              About
+            </li>
+            <li
+              onClick={() => scrollHandler(section3)}
+              style={{ cursor: "pointer" }}
+            >
+              Experience
+            </li>
+            <li
+              onClick={() => scrollHandler(section4)}
+              style={{ cursor: "pointer" }}
+            >
+              Work
+            </li>
+            <li
+              onClick={() => scrollHandler(section5)}
+              style={{ cursor: "pointer" }}
+            >
+              Contact
+            </li>
           </ul>
         </div>
       </header>
 
-      <div ref={section1} className="sec1"><Home /></div>
+      <div ref={section1} className="sec1">
+        <Home />
+      </div>
 
-      <div ref={section2} className="sec2"><About /></div>
+      <div ref={section2} className="sec2">
+        <About />
+      </div>
 
-      <div ref={section3} className="sec3" ><Project /></div>
+      <div ref={section3} className="sec3">
+        <Experience />
+      </div>
 
-      <div ref={section4} className="sec4"><Contact /></div>
-      <div style={{
-        position: "fixed",
-        right: 10,
-        bottom: 20,
-        color: "green",
-        marginRight: 15, 
-        cursor: "pointer"
-      }}
-        onClick={() => scrollToTop(toTop)}>
-        {show && <h1><FaArrowAltCircleUp /></h1>}
+      <div ref={section4} className="sec4">
+        <Project />
+      </div>
+
+      <div ref={section5} className="sec5">
+        <Contact />
+      </div>
+
+      <div
+        style={{
+          position: "fixed",
+          right: 10,
+          bottom: 20,
+          color: "white",
+          marginRight: 15,
+          cursor: "pointer",
+        }}
+        onClick={() => scrollToTop(toTop)}
+      >
+        {show && (
+          <h1>
+            <FaRegArrowAltCircleUp />
+          </h1>
+        )}
       </div>
       <div className="Hamburger">
         <a href="#" onClick={() => setHamb(!showHamb)}>
-          <GiHamburgerMenu />
+          <HiOutlineMenuAlt3 className="Hamburger-icon" />
         </a>
       </div>
+      <div className="sidebar">
+        <span>
+          <a
+            style={{
+              color: "rgb(130, 223, 223)",
+              fontSize: "26px",
+              cursor: "pointer",
+            }}
+            href="https://www.linkedin.com/in/geetanjali-singh-564324203/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin />
+          </a>
+        </span>
+        <span>
+          <a
+            style={{
+              color: "rgb(130, 223, 223)",
+              fontSize: "26px",
+              cursor: "pointer",
+            }}
+            href="https://github.com/geetanjalising"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub />
+          </a>
+        </span>
+        <span>
+          <a
+            style={{
+              color: "rgb(130, 223, 223)",
+              fontSize: "26px",
+              cursor: "pointer",
+            }}
+            href="https://twitter.com/Geetanj21944077"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTwitter />
+          </a>
+        </span>
+        <span>
+          <a
+            style={{
+              color: "rgb(130, 223, 223)",
+              fontSize: "26px",
+              cursor: "pointer",
+            }}
+            href="https://www.instagram.com/geetanjalisingh1815/?next=%2F&hl=en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaInstagram />
+          </a>
+        </span>
+        <div
+       className="sidebar-hrline"
+        ></div>
+      </div>
+
       <AnimatedCursor
         innerSize={8}
         outerSize={35}
@@ -93,10 +199,10 @@ function App() {
         outerAlpha={0}
         hasBlendMode={true}
         innerStyle={{
-          backgroundColor: "white"
+          backgroundColor: "white",
         }}
         outerStyle={{
-          border: "3px solid white"
+          border: "3px solid white",
         }}
       />
     </>
